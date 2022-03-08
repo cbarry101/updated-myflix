@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel = 'stylesheet' href="../static/styles.css">
+</head>
+<body style="background-color:lightblue">
+    <h1>Welcome to your profile!</h1>
+    <div id="top-search">
+    <div>Search For A Movie!</div>
+    <form action ='/search' method="post">
+        <input type="text" placeholder="Enter a movie.." name='movie'/>
+        <button type="submit">SUBMIT</button>
+    </form>
+    </div>
+    <br>
+    <br>
+    <form action = '/watch_list' method='GET'>
+        <div id="watch-list">
+            <label>Your Watch List</label>
+            <button name="watch_list_button">MY LIST</button>
+        </div>
+    </form>
+    <br>
+    <br>
+    <form action ='/watched_movies'>
+        <div class="already-watched">
+            <label>Your Previously Watched Movies!</label>
+            <button name="watched_movies_button">MY WATCHED MOVIES</button>
+        </div>
+        <br>
+        <br>
+    </form>
+    <div class ='logout_button'>
+        <form action ='/logout'>
+            <button type="submit">LOGOUT</button>
+        </form>
+    </div>
+</body>
+</html>

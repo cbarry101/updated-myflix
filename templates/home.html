@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+</head>
+<body class ="login-page">
+    <div class ="loginbox">
+        <img src = "../static/avatar.png" class ='avatar'>
+        <h1>Login Here</h1>
+        <form action ='/login' method = 'post'>
+            <p>USERNAME</p>
+            <input name="username" type="text" placeholder="Enter Username">
+            <p>PASSWORD</p>
+            <input name="password" type="password" placeholder="Enter Password">
+            <input type="submit" value="LOGIN">
+            <a href="/register">Lost Your Password?</a><br>
+            <a href="/register">Dont Have An Account?</a>
+        </form>
+    </div>
+    <div>
+        <form action="/register">
+        </form>
+    </div>
+</body>
+</html>

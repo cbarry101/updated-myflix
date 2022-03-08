@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch List</title>
+    <link rel = 'stylesheet' href="../static/styles.css">
+</head>
+<body style="background-color:lightblue">
+    <h1>Your Movies!</h1>
+    {% for movie in name_list %}
+    <h4>{{movie['title']}}</h4>
+    <form method='POST' action = '/watched_movies'> 
+        <button name='movie_id' value ="{{movie['id']}}" class = 'watch_list_movie_button'>Complete</button>
+    </form>
+    <form method = 'POST' action = '/get_overview'>
+        <button name ='movie_overview' value ="{{movie['overview']}}">SUMMARY</button>
+    </form>
+    {% endfor %}
+    <br>
+    <br>
+    <br>
+
+    <form action = '/new'>
+        <button class="back-home" name="back_home">Return Home</button>
+    </form>
+    
+</body>
+</html>

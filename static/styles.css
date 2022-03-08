@@ -1,0 +1,166 @@
+.login-page{
+    margin:0;
+    padding:0;
+    background:url('../static/movies-pic.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family:sans-serif
+}
+
+button{
+    cursor: pointer;
+}
+button:hover{
+    transform:scale(1.1)
+}
+button{
+    color:red;
+}
+#watched_movies_title{
+    text-align: center;
+}
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.avatar{
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin:0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size:22px;
+}
+
+.loginbox p{
+    margin:0;
+    padding:0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type='text'], input[type='password']{
+    border:none;
+    border-bottom: 1px solid #fff;
+    background:transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type='submit']{
+    cursor:pointer;
+    border:none;
+    outline:none;
+    height:40px;
+    background:#fb2525;
+    color:#fff;
+    font-size:18px;
+    border-radius: 20px;
+}
+loginbox input[type='submit']:hover{
+    cursor:pointer;
+    background: #ffc107;
+    color:#000;
+
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height:20px;
+    color:darkgrey;
+}
+.loginbox a:hover{
+    color:#ffc107;
+}
+.register-form{
+    text-align: center;
+}
+.register-form p{
+    text-decoration: underline;
+}
+.register-form input[type='submit']{
+    cursor:pointer;
+    border:none;
+    outline:none;
+    height:40px;
+    background:#fb2525;
+    color:#fff;
+    font-size:18px;
+    border-radius: 20px;
+}
+.black-box{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+#big{
+    text-decoration: underline;
+    font-size: 10px;
+}
+#top-search{
+    width:250px;
+    height:140px;
+    background:lightblue;
+    color:#fff;
+    left:45%;
+    position:absolute;
+    box-sizing: border-box;
+    top: 150px;
+}
+.logout_button{
+    position:absolute;
+    top:80%;
+}
+.logout_button button{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #ffc107;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+.movie_title{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.back-home{
+    position:absolute;
+    top:80%;
+    display: block;
+    width:10%;
+    border: none;
+    background-color: #ffc107;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
